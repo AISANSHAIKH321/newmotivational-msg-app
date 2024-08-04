@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title> NEW Motivational Msg App By Kamal Sir </title>
+		<style>
+			* { font-size:40px; font-family: Cambria; }
+			body { background-color:hsl(76, 100%, 60%);}
+			h2 { border:solid; width:70%; border-radius:30px;}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1> New Motivational Msg App </h1>
+			<h2 id="msg"/>
+			<script>	
+				function show()
+				{
+				
+					let msg = document.getElementById("msg");
+		// create array of messages
+	let data = ["just do it","you will win","all the best","trust the process","i did it"];
+	// generate random integer from 0 to max --> array ka last element
+	let r = parseInt(Math.random() * data.length);  //0 to 4
+	
+	// show the msg
+	msg.innerHTML =data[r];
+				}
+				show();
+				setInterval(show,5000);
+			</script>
+		</center>
+	</body>
+</html>
+
